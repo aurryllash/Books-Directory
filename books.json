@@ -1,0 +1,119 @@
+[
+    {
+    "name": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "release_year": "1950",
+    "genres": ["Fantasy", "Children's", "Adventure"],
+    "createdAt": "2024-04-23T10:25:00.000+00:00",
+    "updatedAt": "2024-04-23T10:25:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "release_year": "2008",
+    "genres": ["Science Fiction", "Dystopian", "Young Adult"],
+    "createdAt": "2024-04-23T10:30:00.000+00:00",
+    "updatedAt": "2024-04-23T10:30:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "The Shining",
+    "author": "Stephen King",
+    "release_year": "1977",
+    "genres": ["Fiction", "Horror"],
+    "createdAt": "2024-04-23T10:35:00.000+00:00",
+    "updatedAt": "2024-04-23T10:35:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "release_year": "1847",
+    "genres": ["Fiction", "Romance", "Gothic"],
+    "createdAt": "2024-04-23T10:40:00.000+00:00",
+    "updatedAt": "2024-04-23T10:40:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "release_year": "1859",
+    "genres": ["Fiction", "Classics", "Historical Fiction"],
+    "createdAt": "2024-04-23T10:45:00.000+00:00",
+    "updatedAt": "2024-04-23T10:45:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "Frankenstein",
+    "author": "Mary Shelley",
+    "release_year": "1818",
+    "genres": ["Fiction", "Gothic", "Science Fiction"],
+    "createdAt": "2024-04-23T10:50:00.000+00:00",
+    "updatedAt": "2024-04-23T10:50:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "The Adventures of Huckleberry Finn",
+    "author": "Mark Twain",
+    "release_year": "1884",
+    "genres": ["Fiction", "Adventure", "Classics"],
+    "createdAt": "2024-04-23T10:55:00.000+00:00",
+    "updatedAt": "2024-04-23T10:55:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "The War of the Worlds",
+    "author": "H.G. Wells",
+    "release_year": "1898",
+    "genres": ["Fiction", "Science Fiction"],
+    "createdAt": "2024-04-23T11:00:00.000+00:00",
+    "updatedAt": "2024-04-23T11:00:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "release_year": "1911",
+    "genres": ["Children's", "Classics"],
+    "createdAt": "2024-04-23T11:05:00.000+00:00",
+    "updatedAt": "2024-04-23T11:05:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "release_year": "1844",
+    "genres": ["Fiction", "Adventure", "Classics"],
+    "createdAt": "2024-04-23T11:10:00.000+00:00",
+    "updatedAt": "2024-04-23T11:10:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "Brave New World",
+    "author": "Aldous Huxley",
+    "release_year": "1932",
+    "genres": ["Fiction", "Science Fiction", "Dystopian"],
+    "createdAt": "2024-04-23T11:15:00.000+00:00",
+    "updatedAt": "2024-04-23T11:15:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "release_year": "1866",
+    "genres": ["Fiction", "Classics"],
+    "createdAt": "2024-04-23T11:20:00.000+00:00",
+    "updatedAt": "2024-04-23T11:20:00.000+00:00",
+    "__v": 0
+  },
+  {
+    "name": "The Odyssey",
+    "author": "Homer",
+    "release_year": "800 BC",
+    "genres": ["Epic", "Poetry", "Classics"],
+    "createdAt": "2024-04-23T11:25:00.000+00:00",
+    "updatedAt": "2024-04-23T11:25:00.000+00:00",
+    "__v": 0
+  }
+]

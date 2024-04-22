@@ -45,6 +45,20 @@
   h6 {
     font-size: 16px;
   }
+  button {
+    border: none;
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(59, 59, 59);
+  }
+  button:hover {
+    background-color: rgb(252, 208, 208);
+  }
+  .delete-button {
+    margin-left: 10px;
+  }
     </style>
     <% if(result.length > 0) {%>
   <div class="product d-flex justify-content-center align-items-center">
@@ -59,6 +73,10 @@
               <p class="release_year">Release year: <%= result[i].release_year %> </p>
               <p class="genres">genres: <%= result[i].genres %> </p>
             </div>
+            <div class="buttons d-flex justify-content-center">
+              <button>In Details</button>
+              <button class="delete-button" data-id="<%= result[i]._id %>">Delete</button>
+            </div>
           </div>
       </li>
       <% } %>
@@ -66,10 +84,32 @@
     
   </div>
   <% } else {%>
-  <div class="container d-flex justify-content-center mt-4 vh-100" *ngIf="isEmpty">
+  <div class="container d-flex justify-content-center mt-4 vh-100">
     <h1>NOTHING MATCHES YOUR SEARCH!  </h1>
   </div>
   <%}%>
 
+  <script>
+    const deleteButtons = document.querySelectorAll("button.delete-button")
+
+    deleteButtons.forEach(deleteButton => {
+      deleteButton.addEventListener('click', () => {
+      const id = deleteButton.dataset.id;
+
+      fetch(`/books/${id}`, {
+        method: 'DELETE'
+      })
+      .then(response => response.json())
+      .then(response => {
+        window.location.href = response.redirect
+      })
+      .catch(err => console.log(err))
+    })
+
+  })
+
+  
+
+  </script>
 </body>
 </html>
