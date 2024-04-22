@@ -1,9 +1,16 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const book = require('./models/bookSchema')
-const Users = require('./models/userSchema')
-
 const app = express();
+const mongoose = require('mongoose');
+const bookRoutes = require('./Routes/bookRoute')
+
+
+
+app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
+
+app.set('view engine', 'ejs');
+
+
 
 const mongoDbUrl = "mongodb://127.0.0.1:27017/myDb";
 
@@ -13,29 +20,19 @@ mongoose.connect(mongoDbUrl)
         app.listen(3000, () => console.log('Express server is running on port 3000'))
     })
     .catch(err => console.log("MongoDB connection error: " + err));
-    
 
-app.get('/books', (req, res) => {
-    book.find()
-        .then(result => {
-            console.log(result)
-            res.send(result)
-            
-        })
-        .catch(err => {
-            console.log(err)
-            res.status(500).send("Internal Server Error");
-        })
+// Book Routes
+app.use('/books', bookRoutes)
+
+
+app.get('/', (req, res) => {
+    res.render('home')
 })
-// app.get('/', async (req, res) => {
-//     const bookModel = await book.find();
-//     res.send(bookModel)
-// })
-
+app.get('/about', (req, res) => {
+    res.render('about');
+})
 app.get('/users', (req, res) => {
-    Users.find()
-        .then(result => {
-            console.log(result)
-            res.send(result)
-        })
+    res.render('users');
 })
+
+

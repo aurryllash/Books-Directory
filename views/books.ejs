@@ -1,0 +1,75 @@
+<%- include('./partials/header')%>
+    <style>
+        @media(max-width: 1400px) {
+  .card {
+    margin: 10px;
+    margin-left: 5px;
+    height: 400px;
+    max-width: 220px;
+    padding: 20px 10px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+  }
+}
+.product {
+    margin-top: 50px;
+    font-size: 16px;
+}
+.card {
+    margin: 10px;
+    margin-left: 5px;
+    height: 400px;
+    /* max-width: 240px; */
+    /* padding-top: 20px; */
+    padding: 20px 10px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    color: white;
+  }
+  .suthor {
+    font-weight: 600;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h6 {
+    font-size: 16px;
+  }
+    </style>
+    <% if(result.length > 0) {%>
+  <div class="product d-flex justify-content-center align-items-center">
+    
+    <ul>
+        <% for(let i=0; i<result.length; i++) {%>
+      <li *ngFor="let item of product">
+          <div class="card border-4" style="width: 18rem; border: 1px solid white" >
+            <div class="card-body">
+              <h4 class="card-title">Title: <%= result[i].name %> </h4>
+              <p class="author">Author: <%= result[i].author%> </p>
+              <p class="release_year">Release year: <%= result[i].release_year %> </p>
+              <p class="genres">genres: <%= result[i].genres %> </p>
+            </div>
+          </div>
+      </li>
+      <% } %>
+    </ul>
+    
+  </div>
+  <% } else {%>
+  <div class="container d-flex justify-content-center mt-4 vh-100" *ngIf="isEmpty">
+    <h1>NOTHING MATCHES YOUR SEARCH!  </h1>
+  </div>
+  <%}%>
+
+</body>
+</html>
