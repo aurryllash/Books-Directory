@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const book = require('./models/bookSchema')
+const Users = require('./models/userSchema')
 
 const app = express();
 
@@ -17,15 +18,24 @@ mongoose.connect(mongoDbUrl)
 app.get('/books', (req, res) => {
     book.find()
         .then(result => {
-            res.send(result)
             console.log(result)
+            res.send(result)
+            
         })
         .catch(err => {
             console.log(err)
             res.status(500).send("Internal Server Error");
         })
 })
-app.get('/', async (req, res) => {
-    const bookModel = await book.find();
-    res.json(bookModel)
+// app.get('/', async (req, res) => {
+//     const bookModel = await book.find();
+//     res.send(bookModel)
+// })
+
+app.get('/users', (req, res) => {
+    Users.find()
+        .then(result => {
+            console.log(result)
+            res.send(result)
+        })
 })
