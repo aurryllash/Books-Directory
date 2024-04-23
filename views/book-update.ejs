@@ -2,15 +2,15 @@
 <section style="padding: 0 0 150px 0;">
     
     <div class="container" style="margin-top: 100px;">
-        <h1>ADD PRODUCT</h1>
-        <form style="width: 400px;" action="/books" method="POST">
+        <h1>UPDATE PRODUCT</h1>
+        <form style="width: 400px;" action="/books" method="PUT">
             <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" name="name" id="title" required>
+                <label for="title" class="form-label">Title:</label>
+                <input type="text" class="form-control" value="<%= result.name %>" name="name" id="title" required>
             </div>
             <div class="mb-3">
                 <label for="author" class="form-label">Author</label>
-                <input type="text" class="form-control" name="author" id="author" required>
+                <input type="text" class="form-control" value="<%= result.author %>" name="author" id="author" required>
             </div>
             <!-- <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
@@ -25,11 +25,11 @@
             </div>    -->
             <div class="mb-3">
                 <label for="release_year" class="form-label">Release Year</label>
-                <input type="text" class="form-control" name="release_year" id="release_year" placeholder="1818" required>
+                <input type="text" class="form-control" value="<%= result.release_year %>" name="release_year" id="release_year" required>
             </div> 
             <div class="mb-3">
                 <label for="genres" class="form-label">Genres</label>
-                <input type="text" class="form-control" name="genres" id="genres" placeholder="Fiction, Classic..." required>
+                <input type="text" class="form-control" value="<%= result.genres %>" name="genres" id="genres" placeholder="Fiction, Classic..." required>
             </div> 
             <button type="submit" class="btn btn-primary">Submit</button>
             <a href="/books" class="btn btn-light" style="background-color: rgb(189, 189, 189); color: whitesmoke; margin-left: 20px;">Cancel</a>

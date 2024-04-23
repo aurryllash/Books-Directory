@@ -1,119 +1,410 @@
 [
     {
-    "name": "The Chronicles of Narnia",
-    "author": "C.S. Lewis",
-    "release_year": "1950",
-    "genres": ["Fantasy", "Children's", "Adventure"],
-    "createdAt": "2024-04-23T10:25:00.000+00:00",
-    "updatedAt": "2024-04-23T10:25:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "The Hunger Games",
-    "author": "Suzanne Collins",
-    "release_year": "2008",
-    "genres": ["Science Fiction", "Dystopian", "Young Adult"],
-    "createdAt": "2024-04-23T10:30:00.000+00:00",
-    "updatedAt": "2024-04-23T10:30:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "The Shining",
-    "author": "Stephen King",
-    "release_year": "1977",
-    "genres": ["Fiction", "Horror"],
-    "createdAt": "2024-04-23T10:35:00.000+00:00",
-    "updatedAt": "2024-04-23T10:35:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "Wuthering Heights",
-    "author": "Emily Brontë",
-    "release_year": "1847",
-    "genres": ["Fiction", "Romance", "Gothic"],
-    "createdAt": "2024-04-23T10:40:00.000+00:00",
-    "updatedAt": "2024-04-23T10:40:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "A Tale of Two Cities",
-    "author": "Charles Dickens",
-    "release_year": "1859",
-    "genres": ["Fiction", "Classics", "Historical Fiction"],
-    "createdAt": "2024-04-23T10:45:00.000+00:00",
-    "updatedAt": "2024-04-23T10:45:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "Frankenstein",
-    "author": "Mary Shelley",
-    "release_year": "1818",
-    "genres": ["Fiction", "Gothic", "Science Fiction"],
-    "createdAt": "2024-04-23T10:50:00.000+00:00",
-    "updatedAt": "2024-04-23T10:50:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "The Adventures of Huckleberry Finn",
-    "author": "Mark Twain",
-    "release_year": "1884",
-    "genres": ["Fiction", "Adventure", "Classics"],
-    "createdAt": "2024-04-23T10:55:00.000+00:00",
-    "updatedAt": "2024-04-23T10:55:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "The War of the Worlds",
-    "author": "H.G. Wells",
-    "release_year": "1898",
-    "genres": ["Fiction", "Science Fiction"],
-    "createdAt": "2024-04-23T11:00:00.000+00:00",
-    "updatedAt": "2024-04-23T11:00:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "The Secret Garden",
-    "author": "Frances Hodgson Burnett",
-    "release_year": "1911",
-    "genres": ["Children's", "Classics"],
-    "createdAt": "2024-04-23T11:05:00.000+00:00",
-    "updatedAt": "2024-04-23T11:05:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "The Count of Monte Cristo",
-    "author": "Alexandre Dumas",
-    "release_year": "1844",
-    "genres": ["Fiction", "Adventure", "Classics"],
-    "createdAt": "2024-04-23T11:10:00.000+00:00",
-    "updatedAt": "2024-04-23T11:10:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "Brave New World",
-    "author": "Aldous Huxley",
-    "release_year": "1932",
-    "genres": ["Fiction", "Science Fiction", "Dystopian"],
-    "createdAt": "2024-04-23T11:15:00.000+00:00",
-    "updatedAt": "2024-04-23T11:15:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "Crime and Punishment",
-    "author": "Fyodor Dostoevsky",
-    "release_year": "1866",
-    "genres": ["Fiction", "Classics"],
-    "createdAt": "2024-04-23T11:20:00.000+00:00",
-    "updatedAt": "2024-04-23T11:20:00.000+00:00",
-    "__v": 0
-  },
-  {
-    "name": "The Odyssey",
-    "author": "Homer",
-    "release_year": "800 BC",
-    "genres": ["Epic", "Poetry", "Classics"],
-    "createdAt": "2024-04-23T11:25:00.000+00:00",
-    "updatedAt": "2024-04-23T11:25:00.000+00:00",
-    "__v": 0
-  }
-]
+      "_id": {
+        "$oid": "66268d02f8d68a956000b6b4"
+      },
+      "name": "2001: A Space Odyssey",
+      "author": "Arthur C. Clarke",
+      "release_year": 1968,
+      "genres": [
+        "fiction",
+        "Science Fiction"
+      ],
+      "description": "2001: A Space Odyssey is a science fiction novel by Arthur C. Clarke. It was developed concurrently with Stanley Kubrick's film version and published after the release of the film. The story deals with themes of artificial intelligence, evolution, and the future of humanity."
+    },
+    {
+      "_id": {
+        "$oid": "66268e26f8d68a956000b6b5"
+      },
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "release_year": "1960",
+      "genres": [
+        "Fiction",
+        "Classics"
+      ],
+      "description": "To Kill a Mockingbird is a novel by Harper Lee. It is set in the fictional town of Maycomb, Alabama, during the Great Depression, and follows the journey of young Scout Finch as her father, Atticus Finch, defends a black man accused of raping a white woman."
+    },
+    {
+      "_id": {
+        "$oid": "66268e26f8d68a956000b6b6"
+      },
+      "name": "1984",
+      "author": "George Orwell",
+      "release_year": "1949",
+      "genres": [
+        "Fiction",
+        "Dystopian"
+      ],
+      "description": "1984 is a dystopian novel by George Orwell. It depicts a totalitarian regime where the government controls every aspect of life, and individualism and independent thought are forbidden. The novel explores themes of surveillance, propaganda, and the erosion of truth."
+    },
+    {
+      "_id": {
+        "$oid": "66268e26f8d68a956000b6b7"
+      },
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "release_year": "1925",
+      "genres": [
+        "Fiction",
+        "Classics"
+      ],
+      "description": "The Great Gatsby is a novel by F. Scott Fitzgerald set in the Jazz Age of the 1920s. It follows the life and times of millionaire Jay Gatsby and his pursuit of the American Dream. The novel explores themes of love, wealth, and the corruption of the American Dream."
+    },
+    {
+      "_id": {
+        "$oid": "66268e26f8d68a956000b6b8"
+      },
+      "name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "release_year": "1813",
+      "genres": [
+        "Fiction",
+        "Romance",
+        "Classics"
+      ],
+      "description": "Pride and Prejudice is a romantic novel by Jane Austen. Set in rural England, it follows the life of Elizabeth Bennet as she navigates the complexities of love, marriage, and societal expectations. The novel is known for its wit, social commentary, and memorable characters."
+    },
+    {
+      "_id": {
+        "$oid": "66268e26f8d68a956000b6b9"
+      },
+      "name": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "release_year": "1937",
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "description": "The Hobbit is a fantasy novel by J.R.R. Tolkien. It follows the journey of Bilbo Baggins, a hobbit who is swept into an epic quest to reclaim the lost Dwarf Kingdom of Erebor from the dragon Smaug. Along the way, Bilbo encounters elves, trolls, and other fantastical creatures."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6c3"
+      },
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "release_year": "1960",
+      "genres": [
+        "Fiction",
+        "Classics"
+      ],
+      "createdAt": "2024-04-23T09:15:00.000+00:00",
+      "updatedAt": "2024-04-23T09:15:00.000+00:00",
+      "__v": 0,
+      "description": "To Kill a Mockingbird is a novel by Harper Lee. It is set in the fictional town of Maycomb, Alabama, during the Great Depression, and follows the journey of young Scout Finch as her father, Atticus Finch, defends a black man accused of raping a white woman."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6c4"
+      },
+      "name": "1984",
+      "author": "George Orwell",
+      "release_year": "1949",
+      "genres": [
+        "Fiction",
+        "Science Fiction",
+        "Classics"
+      ],
+      "createdAt": "2024-04-23T09:20:00.000+00:00",
+      "updatedAt": "2024-04-23T09:20:00.000+00:00",
+      "__v": 0,
+      "description": "1984 is a dystopian novel by George Orwell. It depicts a totalitarian regime where the government controls every aspect of life, and individualism and independent thought are forbidden. The novel explores themes of surveillance, propaganda, and the erosion of truth."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6c5"
+      },
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "release_year": "1925",
+      "genres": [
+        "Fiction",
+        "Classics"
+      ],
+      "createdAt": "2024-04-23T09:25:00.000+00:00",
+      "updatedAt": "2024-04-23T09:25:00.000+00:00",
+      "__v": 0,
+      "description": "The Great Gatsby is a novel by F. Scott Fitzgerald set in the Jazz Age of the 1920s. It follows the life and times of millionaire Jay Gatsby and his pursuit of the American Dream. The novel explores themes of love, wealth, and the corruption of the American Dream."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6c6"
+      },
+      "name": "Moby-Dick",
+      "author": "Herman Melville",
+      "release_year": "1851",
+      "genres": [
+        "Fiction",
+        "Adventure",
+        "Classics"
+      ],
+      "createdAt": "2024-04-23T09:30:00.000+00:00",
+      "updatedAt": "2024-04-23T09:30:00.000+00:00",
+      "__v": 0,
+      "description": "Moby-Dick is a novel by Herman Melville. It follows the journey of Ishmael, a sailor aboard the whaling ship Pequod, as he becomes obsessed with hunting the elusive white whale, Moby Dick. The novel explores themes of obsession, fate, and the conflict between man and nature."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6c7"
+      },
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "release_year": "1951",
+      "genres": [
+        "Fiction",
+        "Classics"
+      ],
+      "createdAt": "2024-04-23T09:35:00.000+00:00",
+      "updatedAt": "2024-04-23T09:35:00.000+00:00",
+      "__v": 0,
+      "description": "The Catcher in the Rye is a novel by J.D. Salinger. It follows the story of Holden Caulfield, a disaffected teenager who wanders through New York City after being expelled from prep school. The novel explores themes of alienation, identity, and the search for authenticity."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6c8"
+      },
+      "name": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "release_year": "1847",
+      "genres": [
+        "Fiction",
+        "Romance",
+        "Classics"
+      ],
+      "createdAt": "2024-04-23T09:40:00.000+00:00",
+      "updatedAt": "2024-04-23T09:40:00.000+00:00",
+      "__v": 0,
+      "description": "Jane Eyre is a novel by Charlotte Brontë. It follows the life of the titular character, Jane Eyre, as she grows up orphaned and mistreated, eventually becoming a governess at Thornfield Hall. The novel explores themes of love, independence, and the search for belonging."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6c9"
+      },
+      "name": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "release_year": "1954",
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "createdAt": "2024-04-23T09:45:00.000+00:00",
+      "updatedAt": "2024-04-23T09:45:00.000+00:00",
+      "__v": 0,
+      "description": "The Lord of the Rings is a fantasy epic by J.R.R. Tolkien. It follows the quest to destroy the One Ring, a powerful artifact that threatens the peace of Middle-earth. The novel explores themes of heroism, friendship, and the struggle against evil."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6ca"
+      },
+      "name": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "release_year": "1997",
+      "genres": [
+        "Fantasy",
+        "Young Adult"
+      ],
+      "createdAt": "2024-04-23T09:50:00.000+00:00",
+      "updatedAt": "2024-04-23T09:50:00.000+00:00",
+      "__v": 0,
+      "description": "Harry Potter and the Philosopher's Stone is the first book in the Harry Potter series by J.K. Rowling. It follows the story of Harry Potter, a young wizard who discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry. The novel explores themes of friendship, courage, and the battle between good and evil."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6cb"
+      },
+      "name": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "release_year": "1937",
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "createdAt": "2024-04-23T09:55:00.000+00:00",
+      "updatedAt": "2024-04-23T09:55:00.000+00:00",
+      "__v": 0,
+      "description": "The Hobbit is a fantasy novel by J.R.R. Tolkien. It follows the journey of Bilbo Baggins, a hobbit who is swept into an epic quest to reclaim the lost Dwarf Kingdom of Erebor from the dragon Smaug. Along the way, Bilbo encounters elves, trolls, and other fantastical creatures."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6cc"
+      },
+      "name": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "release_year": "2003",
+      "genres": [
+        "Fiction",
+        "Mystery",
+        "Thriller"
+      ],
+      "createdAt": "2024-04-23T10:00:00.000+00:00",
+      "updatedAt": "2024-04-23T10:00:00.000+00:00",
+      "__v": 0,
+      "description": "The Da Vinci Code is a mystery thriller novel by Dan Brown. It follows symbologist Robert Langdon as he investigates a murder in the Louvre Museum and uncovers a conspiracy that could shake the foundations of Christianity."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6cd"
+      },
+      "name": "The Alchemist",
+      "author": "Paulo Coelho",
+      "release_year": "1988",
+      "genres": [
+        "Fiction",
+        "Adventure"
+      ],
+      "createdAt": "2024-04-23T10:05:00.000+00:00",
+      "updatedAt": "2024-04-23T10:05:00.000+00:00",
+      "__v": 0,
+      "description": "The Alchemist is a novel by Paulo Coelho. It follows the journey of Santiago, a young shepherd boy, as he travels from Spain to Egypt in search of a hidden treasure. Along the way, Santiago learns valuable lessons about following his dreams and listening to his heart."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6ce"
+      },
+      "name": "The Adventures of Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "release_year": "1892",
+      "genres": [
+        "Fiction",
+        "Mystery"
+      ],
+      "createdAt": "2024-04-23T10:10:00.000+00:00",
+      "updatedAt": "2024-04-23T10:10:00.000+00:00",
+      "__v": 0,
+      "description": "The Adventures of Sherlock Holmes is a collection of detective stories by Arthur Conan Doyle. It features the famous detective Sherlock Holmes and his loyal friend Dr. John Watson as they solve various mysteries in Victorian London."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6cf"
+      },
+      "name": "Dracula",
+      "author": "Bram Stoker",
+      "release_year": "1897",
+      "genres": [
+        "Fiction",
+        "Horror"
+      ],
+      "createdAt": "2024-04-23T10:15:00.000+00:00",
+      "updatedAt": "2024-04-23T10:15:00.000+00:00",
+      "__v": 0,
+      "description": "Dracula is a gothic horror novel by Bram Stoker. It tells the story of Count Dracula's attempt to move from Transylvania to England so he may find new blood and spread the undead curse, and of the battle between Dracula and a small group of people led by Professor Abraham Van Helsing."
+    },
+    {
+      "_id": {
+        "$oid": "6626cb55f8d68a956000b6d0"
+      },
+      "name": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "release_year": "1890",
+      "genres": [
+        "Fiction",
+        "Classics"
+      ],
+      "createdAt": "2024-04-23T10:20:00.000+00:00",
+      "updatedAt": "2024-04-23T10:20:00.000+00:00",
+      "__v": 0,
+      "description": "The Picture of Dorian Gray is a philosophical novel by Oscar Wilde. It tells the story of a young man named Dorian Gray who makes a Faustian bargain to retain his youthful appearance while his portrait ages in his place. The novel explores themes of vanity, corruption, and the nature of art."
+    },
+    {
+      "_id": {
+        "$oid": "6626cbcff8d68a956000b6d1"
+      },
+      "name": "The Chronicles of Narnia",
+      "author": "C.S. Lewis",
+      "release_year": "1950",
+      "genres": [
+        "Fantasy",
+        "Children's",
+        "Adventure"
+      ],
+      "createdAt": "2024-04-23T10:25:00.000+00:00",
+      "updatedAt": "2024-04-23T10:25:00.000+00:00",
+      "__v": 0,
+      "description": "The Chronicles of Narnia is a series of fantasy novels by C.S. Lewis. It follows the adventures of children who are transported to the magical land of Narnia, where they encounter talking animals, mythical creatures, and battles between good and evil."
+    },
+    {
+      "_id": {
+        "$oid": "6626cbcff8d68a956000b6d2"
+      },
+      "name": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "release_year": "2008",
+      "genres": [
+        "Science Fiction",
+        "Dystopian",
+        "Young Adult"
+      ],
+      "createdAt": "2024-04-23T10:30:00.000+00:00",
+      "updatedAt": "2024-04-23T10:30:00.000+00:00",
+      "__v": 0,
+      "description": "The Hunger Games is a dystopian science fiction novel by Suzanne Collins. It takes place in a future society where children are forced to fight to the death in a televised event called the Hunger Games. The novel follows protagonist Katniss Everdeen as she volunteers to take her sister's place in the Games and becomes a symbol of rebellion against the oppressive government."
+    },
+    {
+      "_id": {
+        "$oid": "6626cbcff8d68a956000b6d3"
+      },
+      "name": "The Shining",
+      "author": "Stephen King",
+      "release_year": "1977",
+      "genres": [
+        "Fiction",
+        "Horror"
+      ],
+      "createdAt": "2024-04-23T10:35:00.000+00:00",
+      "updatedAt": "2024-04-23T10:35:00.000+00:00",
+      "__v": 0,
+      "description": "The Shining is a horror novel by Stephen King. It follows Jack Torrance, an aspiring writer and recovering alcoholic, who accepts a job as the winter caretaker of the historic Overlook Hotel in the Colorado Rockies. As the winter snow traps Jack and his family in the hotel, supernatural forces begin to influence Jack's sanity, leading to a terrifying descent into madness."
+    },
+    {
+      "_id": {
+        "$oid": "6626cbcff8d68a956000b6d4"
+      },
+      "name": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "release_year": "1847",
+      "genres": [
+        "Fiction",
+        "Romance",
+        "Gothic"
+      ],
+      "createdAt": "2024-04-23T10:40:00.000+00:00",
+      "updatedAt": "2024-04-23T10:40:00.000+00:00",
+      "__v": 0,
+      "description": "Wuthering Heights is a gothic romance novel by Emily Brontë. It tells the story of the passionate and destructive love between Catherine Earnshaw and Heathcliff, an orphan who is adopted by Catherine's father. The novel explores themes of revenge, social class, and the supernatural."
+    },
+    {
+      "_id": {
+        "$oid": "6626cbcff8d68a956000b6d5"
+      },
+      "name": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "release_year": "1979",
+      "genres": [
+        "Science Fiction",
+        "Humor"
+      ],
+      "createdAt": "2024-04-23T10:45:00.000+00:00",
+      "updatedAt": "2024-04-23T10:45:00.000+00:00",
+      "__v": 0,
+      "description": "The Hitchhiker's Guide to the Galaxy is a science fiction comedy novel by Douglas Adams. It follows the misadventures of Arthur Dent, an ordinary human who is swept off Earth just before it is destroyed to make way for a hyperspace bypass. Joined by his alien friend Ford Prefect, Arthur embarks on a journey across the galaxy, encountering bizarre creatures and situations along the way."
+    },
+    {
+      "_id": {
+        "$oid": "6626cbcff8d68a956000b6d6"
+      },
+      "name": "Frankenstein",
+      "author": "Mary Shelley",
+      "release_year": "1818",
+      "genres": [
+        "Fiction",
+        "Horror",
+        "Gothic"
+      ],
+      "createdAt": "2024-04-23T10:50:00.000+00:00",
+      "updatedAt": "2024-04-23T10:50:00.000+00:00",
+      "__v": 0,
+      "description": "Frankenstein; or, The Modern Prometheus is a novel by Mary Shelley. It tells the story of Victor Frankenstein, a young scientist who creates a grotesque creature in an unorthodox scientific experiment. The novel explores themes of ambition, morality, and the consequences of playing god."
+    }
+  ]
+  

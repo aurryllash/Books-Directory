@@ -74,7 +74,7 @@
               <p class="genres">genres: <%= result[i].genres %> </p>
             </div>
             <div class="buttons d-flex justify-content-center">
-              <button>In Details</button>
+              <a href="/books/details/<%= result[i]._id%>"><button class="details-button">In Details</button></a>
               <button class="delete-button" data-id="<%= result[i]._id %>">Delete</button>
             </div>
           </div>

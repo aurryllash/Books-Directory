@@ -1,0 +1,46 @@
+<%- include('./partials/header')%>
+
+<section>
+    <div class="container py-5" style="margin-bottom: 300px;">
+        <div class="row d-flex justify-content-center align-items-center h-150">
+            <div class="col mb-4 mb-lg-0">
+                <div class="card mt-4 border-0" style="border-radius: .5rem; background-color: transparent;">
+                    <div class="row g-2">
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <h6 style="font-size: 22px; font-weight: 700;">Title: <%= result.name %></h6>
+                                <hr class="mt-0 mb-4">
+                                <div class="row pt-1">
+                                    <div class="col-6 mb-3 description">
+                                        <p class="text-muted" style="font-size: 16px;">Description: [ <%= result.description %> ]</p>
+                                    </div>
+                                    <div class="col-7 ml-2">
+                                        <span style="font-size: 20px; font-weight: 700;">Author:: <%= result.author %></span>
+                                    </div>
+                                    <div class="col-7" style="margin-top: 20px;">
+                                        <span style="font-size: 18px; font-weight: 400; margin-top: 20px;">Release Year: <%= result.release_year %></span>
+                                    </div>
+                                    <div class="col-5">
+                                        <a href="/books/update/<%= result._id %>"><button type="button" class="btn btn-light">UPDATE</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivary vh-100 container">
+        <h1>DELIVERY & RETURNS</h1>
+        <ul class="col-6">
+            <li>One delivery fee to most locations (check our Orders & Delivery page)</li>
+            <hr>
+            <li>Free returns within 14 days (excludes final sale and made-to-order items, face masks and certain products containing hazardous or flammable materials, such as fragrances and aerosols)</li>
+            <h3 style="font-weight: 600; margin-top: 20px;">Import duties information</h3>
+            <p>Let us handle the legwork.
+
+                Delivery duties are included in the item price when shipping to all EU countries (excluding the Canary Islands), plus The United Kingdom, USA, Canada, China Mainland, Australia, New Zealand, Puerto Rico, Switzerland, Singapore, Republic Of Korea, Kuwait, Mexico, Qatar, India, Norway, Saudi Arabia, Taiwan Region, Thailand, U.A.E., Japan, Brazil, Isle of Man, San Marino, Colombia, Chile, Argentina, Egypt, Lebanon, Hong Kong SAR, Bahrain and Turkey. All import duties are included in your order – the price you see is the price you pay.</p>
+        </ul>
+    </div>
+</section>
