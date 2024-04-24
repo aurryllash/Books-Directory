@@ -38,19 +38,44 @@ const get_book_details = (req, res) => {
     const id = req.params.id;
     Book.findById(id)
         .then(result => {
+            if(!result) {
+                return res.status(404).render('404');
+            }
             res.render('book-details', { result });
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+            console.error(err);
+            res.status(500).send('Internal Server Error');
+        })
     
 }
 
-const update_book = (req, res) => {
+const update_book_form = (req, res) => {
     const id = req.params.id;
     Book.findById(id)
         .then(result => {
+            if(!result) {
+                return res.status(404).render('404');
+            }
             res.render('book-update', { result });
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+            console.error(err);
+            res.status(500).send('Internal Server Error');
+        })
 }
 
-module.exports = { get_all_books, add_books, add_books_post, delete_books, get_book_details, update_book }
+const update_book_put = (req, res) => {
+    const id = req.params.id;
+    const newBody = req.body
+    console.log(newBody)
+    // Book.findByIdAndUpdate(id, newBody)
+    //     .then(result => req.json(result))
+    //     .catch(err => console.log(err))
+    Book.replaceOne({_id: id}, req.body)
+        .then(response => {
+            res.json(response)
+        })
+}
+
+module.exports = { get_all_books, add_books, add_books_post, delete_books, get_book_details, update_book_form, update_book_put }
