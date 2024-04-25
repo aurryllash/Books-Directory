@@ -13,21 +13,6 @@ router.post('/', books.add_books_post )
 router.delete('/:id', books.delete_books )
 router.get('/details/:id', books.get_book_details )
 router.get('/update/:id', books.update_book_form )
-router.put('/details/:id', (req, res) => {
-    const id = req.params.id;
-    const newBody = req.body
-    console.log(req.body)
-    console.log(id)
-
-    // Book.findByIdAndUpdate(id, newBody)
-    //     .then(result => req.json(result))
-    //     .catch(err => console.log(err))
-
-    Book.replaceOne({_id: id}, req.body)
-        .then(response => {
-            res.json(response)
-        })
-        .catch(err => console.log(err))  
-    })
+router.put('/details/:id', books.update_book_put )
 
 module.exports = router

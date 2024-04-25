@@ -67,15 +67,15 @@ const update_book_form = (req, res) => {
 
 const update_book_put = (req, res) => {
     const id = req.params.id;
+    const genres = req.body.genres.split(',');
+    req.body.genres = genres;
     const newBody = req.body
-    console.log(newBody)
-    // Book.findByIdAndUpdate(id, newBody)
-    //     .then(result => req.json(result))
-    //     .catch(err => console.log(err))
+
     Book.replaceOne({_id: id}, req.body)
         .then(response => {
-            res.json(response)
+            res.json({ redirect: `/books/details/${id}` })
         })
-}
+        .catch(err => console.log(err))  
+    }
 
 module.exports = { get_all_books, add_books, add_books_post, delete_books, get_book_details, update_book_form, update_book_put }

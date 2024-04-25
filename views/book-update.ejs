@@ -6,11 +6,11 @@
         <form style="width: 400px;" id="updateForm" action="/books/details/<%= result._id %>" method="post">
             <div class="mb-3">
                 <label for="title" class="form-label">Title:</label>
-                <input type="text" class="form-control" value="<%= result.name %>" name="name" id="title" required>
+                <input type="text" class="form-control" value="<%= result.name %>" name="name" id="title"   required>
             </div>
             <div class="mb-3">
                 <label for="author" class="form-label">Author</label>
-                <input type="text" class="form-control" value="<%= result.author %>" name="author" id="author" required>
+                <input type="text" class="form-control" value="<%= result.author %>" name="author" id="author"  required>
             </div>
             <div class="mb-3">
                 <label for="release_year" class="form-label">Release Year</label>
@@ -19,6 +19,10 @@
             <div class="mb-3">
                 <label for="genres" class="form-label">Genres</label>
                 <input type="text" class="form-control" value="<%= result.genres %>" name="genres" id="genres" placeholder="Fiction, Classic..." required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea type="text" class="form-control" name="description" id="description" required><%= result.description %></textarea>
             </div> 
             <button type="submit" class="btn btn-primary">Submit</button>
             <a href="/books/details/<%= result._id %>" class="btn btn-light" style="background-color: rgb(189, 189, 189); color: whitesmoke; margin-left: 20px;">Cancel</a>
@@ -45,10 +49,11 @@
                     body: JSON.stringify(jsonObject)
                 })
                 .then(res => {
-                    console.log(JSON.stringify(jsonObject))
                      return res.json()
                 })
-                .then(res => console.log(res))
+                .then(data => {
+                    window.location.href = data.redirect
+                })
                 .catch(err => console.log(err))
             });
         </script>
